@@ -47,10 +47,6 @@ app-drawer-layout.flex(narrow='{{narrowMode}}',
                         paper-item.menu-item
                             iron-icon(icon='[[item.icon]]')
                             | [[item.text]]
-            template(is='dom-if', if='[[equals(isolationMode, "multi-user")]]')
-                aside.divider
-                a(href$='[[_buildHref("/manage-users", queryParams.*)]]', tabindex='-1')
-                    paper-item.menu-item#contributors Manage Contributors
             aside.divider
             a(href='https://github.com/kubeflow/kubeflow',
                 tabindex='-1', target="_blank")
