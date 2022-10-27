@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 #
 # A simple script to build the Docker images.
 # This is intended to be invoked as a step in Argo to build the docker image.
